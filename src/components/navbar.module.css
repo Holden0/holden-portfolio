@@ -1,0 +1,40 @@
+/* Navbar Container */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Space out logo and navigation */
+    align-items: center;
+    padding: 20px;
+    background-color: #201E1E; /* Dark background for the navbar */
+    box-sizing: border-box;
+  }
+  
+  /* Logo Section */
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logoImage {
+    height: 40px; /* Adjust height as needed */
+  }
+  
+  /* Navigation Links */
+  .navLinks {
+    display: flex;
+    gap: 20px; /* Space out the links */
+    background-color: #252323; /* Accent grey background */
+    padding: 8px 20px; /* Padding inside the rounded rectangle */
+    border-radius: 25px; /* Rounded rectangle */
+  }
+  
+  /* Style for individual links */
+  .navLinks a {
+    color: #FFFFFF; /* White font color */
+    font-family: 'Inter', sans-serif; /* Inter font for links */
+    font-weight: 600; /* Semi-bold font weight */
+    font-size: 14px; /* 14px font size */
+    text-decoration: none; /* Remove underline */
+    display: flex;
+    align-items: center; /* Center text vertically */
+  }
+  

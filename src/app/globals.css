@@ -1,42 +1,56 @@
+/* Import Inter font with all available weights (100 to 900) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Import Degular Display font with all available weights (400 to 900) */
+@import url('https://fonts.googleapis.com/css2?family=Degular+Display:wght@400;500;600;700;800;900&display=swap');
+
+
+
+/* Global Styles */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Color Scheme */
+  --font-color: #FFFFFF; /* White for text */
+  --accent-grey: #252323; /* Accent grey */
+  --background-color: #201E1E; /* Dark background */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
+/* Applying Global Styles */
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
+  font-family: 'Inter', sans-serif; /* Body font */
+  background-color: var(--background-color); /* Background color */
+  color: var(--font-color); /* Font color */
   margin: 0;
+  padding: 0;
 }
 
+/* Default text style for paragraphs */
+p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Links */
 a {
-  color: inherit;
+  color: var(--font-color); /* White for links */
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+/* Header typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Degular Display', serif; /* Use Degular Display for headers */
+  color: var(--font-color); /* Header color */
+  font-weight: 600; /* Default weight for headers */
+}
+
+/* Specific adjustments for h1, h2, h3 */
+h1 {
+  font-size: 2.5rem; /* Adjust the size for h1 */
+}
+
+h2 {
+  font-size: 2rem; /* Adjust the size for h2 */
+}
+
+h3 {
+  font-size: 1.75rem; /* Adjust the size for h3 */
 }
