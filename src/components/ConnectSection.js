@@ -22,7 +22,7 @@ const ConnectSection = () => {
           />
         </a>
         <a
-          href="https://www.linkedin.com/in/yourLinkedInProfile" 
+          href="https://www.linkedin.com/in/holden-budiman" 
           target="_blank" 
           rel="noopener noreferrer"
           className={styles.iconBackground}
