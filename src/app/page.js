@@ -73,7 +73,7 @@ export default function HomePage() {
             title="Community Marketplace"
             date="2023"
             info="Mobile, Web, Tablet"
-            imageSrc="/onward-mockup.png"
+            imageSrc="/neighbourly-mock.png"
             backgroundColor="#357C77"
             titleColor="#FFFFFF"
             dateColor="#161616"
