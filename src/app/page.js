@@ -74,10 +74,10 @@ export default function HomePage() {
             date="2023"
             info="Mobile, Web, Tablet"
             imageSrc="/neighbourly-mock.png"
-            backgroundColor="#357C77"
+            backgroundColor="#252323"
             titleColor="#FFFFFF"
-            dateColor="#161616"
-            infoColor="#161616"
+            dateColor="#8D8D93"
+            infoColor="#8D8D93"
           />
           </div>
           <div className={styles.project}>
