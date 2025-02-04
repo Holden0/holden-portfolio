@@ -1,6 +1,6 @@
 // import React from "react";
 // import Image from "next/image";
-// import styles from "./projectCard.module.css"; // Import CSS module
+// import styles from "./projectCard.module.css"; 
 
 // export default function ProjectCard() {
 //     return (

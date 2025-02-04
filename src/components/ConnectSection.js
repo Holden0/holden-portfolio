@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import styles from "./connectSection.module.css"; // Import CSS module
+import styles from "./connectSection.module.css"; 
 
 const ConnectSection = () => {
   return (
@@ -28,7 +28,7 @@ const ConnectSection = () => {
           className={styles.iconBackground}
         >
           <Image
-            src="/linkedinLogo.svg"
+            src="/linkedInLogo.svg"
             alt="LinkedIn"
             width={30}
             height={30}

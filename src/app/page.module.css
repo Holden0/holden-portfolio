@@ -166,31 +166,28 @@ a.secondary {
     filter: invert();
   }
 } */
-/* Ensure full-width wrapper */
+ 
 .pageWrapper {
-  width: 100%; /* Navbar remains full width */
+  width: 100%;
 }
 
-/* Content Area - Applies margins only to main content */
 .content {
   max-width: 55rem;
   margin: 0 auto;
-  padding: 0.4rem 4rem; /* Increased horizontal padding from 1.25rem to 4rem */
+  padding: 0.4rem 4rem;
 }
 
 .headingSection {
-display: flex;
-flex-direction: column;
-margin-top: 6em;
+  display: flex;
+  flex-direction: column;
+  margin-top: 6em;
 }
 
-
-/* Text Styling */
 .text h1 {
-  font-family: 'Degular Display', sans-serif; /* Global font for headers */
-  font-size: 4rem; /* Equivalent to 48px */
+  font-family: 'Degular Display', sans-serif;
+  font-size: 4rem;
   font-weight: bold;
-  color: var(--font-color); /* Use global white text color */
+  color: var(--font-color);
   line-height: 1em;
   margin: 0em;
 }
@@ -203,19 +200,16 @@ margin-top: 6em;
   margin-top: -0.1em;
 }
 
-/* Image Styling */
 .imageContainer {
-  flex-shrink: 0; /* Adds a small top padding to align with first line of heading */
+  flex-shrink: 0;
 }
-
 
 .heroImage {
-  border-radius: 0.75rem; /* Equivalent to 12px */
+  border-radius: 0.75rem;
 }
 
-/* Highlighted Text */
 .yellowText {
-  color: var(--highlight-yellow); /* Global yellow color */
+  color: var(--highlight-yellow);
 }
 
 .heading01 {
@@ -225,22 +219,11 @@ margin-top: 6em;
   align-items: center;
 }
 
-.headingBody h5{
+.headingBody h5 {
   margin: 1.5rem 0rem;
   line-height: 2.1rem;
   font-size: 2rem;
-
 }
-
-/* .projectSection {
-  width: 100%;
-  max-width: 65rem;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-direction: row;
-  column-gap: 2.5rem;
-} */
 
 .projectSection {
   width: 100%;
@@ -248,20 +231,19 @@ margin-top: 6em;
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  flex-wrap: wrap; /* Allows items to wrap to new rows */
+  flex-wrap: wrap;
   justify-content: space-between;
-  gap: 2rem; /* Adjust spacing */
+  gap: 2rem;
 }
 
 .project {
-  flex: 1 1 calc(50% - 1rem); /* Each project takes half the width minus gap */
+  flex: 1 1 calc(50% - 1rem);
   display: flex;
-  justify-content: center; /* Centers the content */
+  justify-content: center;
 }
 
-/* Responsive Adjustments */
 @media (max-width: 768px) {
   .project {
-    flex: 1 1 100%; /* Full width on smaller screens */
+    flex: 1 1 100%;
   }
 }

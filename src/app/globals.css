@@ -1,72 +1,59 @@
-/* Import Inter font with all available weights (100 to 900) */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-/* Import Degular Display font with all available weights (400 to 900) */
 @import url('https://fonts.googleapis.com/css2?family=Degular+Display:wght@400;500;600;700;800;900&display=swap');
 
-/* Global Styles */
 :root {
-  /* Color Scheme */
-  --font-color: #FFFFFF; /* White for text */
-  --accent-grey: #252323; /* Accent grey */
-  --background-color: #201E1E; /* Dark background */
+  --font-color: #FFFFFF;
+  --accent-grey: #252323;
+  --background-color: #201E1E;
   --highlight-yellow: #EDAF53;
 }
 
-/* Applying Global Styles */
 body {
-  font-family: 'Inter', sans-serif; 
-  background-color: var(--background-color); 
-  color: var(--font-color); 
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background-color);
+  color: var(--font-color);
   margin: 0;
   padding: 0;
 }
 
-/* Default text style for paragraphs */
 p {
   line-height: 1.6;
   margin-bottom: 20px;
 }
 
-/* Links */
 a {
-  color: var(--font-color); /* White for links */
+  color: var(--font-color);
   text-decoration: none;
 }
 
-/* Header typography */
 h1, h2, h3, h4 {
-  font-family: 'Degular Display', serif; /* Use Degular Display for headers */
-  font-weight: 600; /* Default weight for headers */
+  font-family: 'Degular Display', serif;
+  font-weight: 600;
 }
 
-/* Specific adjustments for h1, h2, h3 */
 h1 {
-  font-size: 2.5rem; /* Adjust the size for h1 */
+  font-size: 2.5rem;
 }
 
 h2 {
-  font-size: 2rem; /* Adjust the size for h2 */
+  font-size: 2rem;
 }
 
 h3 {
-  font-size: 1.75rem; /* Adjust the size for h3 */
+  font-size: 1.75rem;
 }
 
-
 h5, h6 {
-  font-family: 'Inter', serif; /* Use Degular Display for headers */
-  color: var(--font-color); /* Header color */
-  font-weight: 400; /* Default weight for headers */
+  font-family: 'Inter', serif;
+  color: var(--font-color);
+  font-weight: 400;
   margin: 1rem;
 }
 
-/* Specific adjustments for h1, h2, h3 */
 h5 {
-  font-size: 2rem; /* Adjust the size for h1 */
+  font-size: 2rem;
 }
 
 h6 {
-  font-size: 2rem; /* Adjust the size for h2 */
+  font-size: 2rem;
 }
-

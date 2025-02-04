@@ -1,10 +1,9 @@
-/* Navbar Container */
 .navbar {
     display: flex;
-    justify-content: space-between; /* Space out logo and navigation */
+    justify-content: space-between;
     align-items: center;
     padding: 1.8rem 6rem;
-    background-color: var(--background-color); /* Use global background color */
+    background-color: var(--background-color);
     box-sizing: border-box;
   }
   
@@ -22,20 +21,20 @@
   /* Navigation Links */
   .navLinks {
     display: flex;
-    gap: 6rem; /* Space out the links */
-    background-color: var(--accent-grey); /* Use global accent grey */
-    padding: 1.6rem 5rem; /* Padding inside the rounded rectangle */
-    border-radius: 2rem; /* Rounded rectangle */
+    gap: 6rem; 
+    background-color: var(--accent-grey); 
+    padding: 1.6rem 5rem; 
+    border-radius: 2rem; 
   }
   
   /* Style for individual links */
   .navLinks a {
-    color: var(--font-color); /* Use global white font color */
-    font-family: 'Inter', sans-serif; /* Use global Inter font */
-    font-weight: 600; /* Semi-bold font weight */
-    font-size: 0.8rem; /* Keep font size equivalent to 14px */
-    text-decoration: none; /* Remove underline */
+    color: var(--font-color); 
+    font-family: 'Inter', sans-serif; 
+    font-weight: 600; 
+    font-size: 0.8rem; 
+    text-decoration: none; 
     display: flex;
-    align-items: center; /* Center text vertically */
+    align-items: center; 
   }
   
