@@ -1,4 +1,4 @@
-.page {
+/* .page {
   --gray-rgb: 0, 0, 0;
   --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
   --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
@@ -106,10 +106,10 @@ a.secondary {
 
 .footer img {
   flex-shrink: 0;
-}
+} */
 
 /* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
+/* @media (hover: hover) and (pointer: fine) {
   a.primary:hover {
     background: var(--button-primary-hover);
     border-color: transparent;
@@ -164,5 +164,104 @@ a.secondary {
 @media (prefers-color-scheme: dark) {
   .logo {
     filter: invert();
+  }
+} */
+/* Ensure full-width wrapper */
+.pageWrapper {
+  width: 100%; /* Navbar remains full width */
+}
+
+/* Content Area - Applies margins only to main content */
+.content {
+  max-width: 55rem;
+  margin: 0 auto;
+  padding: 0.4rem 4rem; /* Increased horizontal padding from 1.25rem to 4rem */
+}
+
+.headingSection {
+display: flex;
+flex-direction: column;
+margin-top: 6em;
+}
+
+
+/* Text Styling */
+.text h1 {
+  font-family: 'Degular Display', sans-serif; /* Global font for headers */
+  font-size: 4rem; /* Equivalent to 48px */
+  font-weight: bold;
+  color: var(--font-color); /* Use global white text color */
+  line-height: 1em;
+  margin: 0em;
+}
+
+.heading01 h1 {
+  margin-top: -0.1em;
+}
+
+.heading02 h1 {
+  margin-top: -0.1em;
+}
+
+/* Image Styling */
+.imageContainer {
+  flex-shrink: 0; /* Adds a small top padding to align with first line of heading */
+}
+
+
+.heroImage {
+  border-radius: 0.75rem; /* Equivalent to 12px */
+}
+
+/* Highlighted Text */
+.yellowText {
+  color: var(--highlight-yellow); /* Global yellow color */
+}
+
+.heading01 {
+  display: flex;
+  flex-direction: row;
+  gap: 4em;
+  align-items: center;
+}
+
+.headingBody h5{
+  margin: 1.5rem 0rem;
+  line-height: 2.1rem;
+  font-size: 2rem;
+
+}
+
+/* .projectSection {
+  width: 100%;
+  max-width: 65rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  column-gap: 2.5rem;
+} */
+
+.projectSection {
+  width: 100%;
+  max-width: 65rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap to new rows */
+  justify-content: space-between;
+  gap: 2rem; /* Adjust spacing */
+}
+
+.project {
+  flex: 1 1 calc(50% - 1rem); /* Each project takes half the width minus gap */
+  display: flex;
+  justify-content: center; /* Centers the content */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .project {
+    flex: 1 1 100%; /* Full width on smaller screens */
   }
 }

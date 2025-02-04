@@ -4,21 +4,20 @@
 /* Import Degular Display font with all available weights (400 to 900) */
 @import url('https://fonts.googleapis.com/css2?family=Degular+Display:wght@400;500;600;700;800;900&display=swap');
 
-
-
 /* Global Styles */
 :root {
   /* Color Scheme */
   --font-color: #FFFFFF; /* White for text */
   --accent-grey: #252323; /* Accent grey */
   --background-color: #201E1E; /* Dark background */
+  --highlight-yellow: #EDAF53;
 }
 
 /* Applying Global Styles */
 body {
-  font-family: 'Inter', sans-serif; /* Body font */
-  background-color: var(--background-color); /* Background color */
-  color: var(--font-color); /* Font color */
+  font-family: 'Inter', sans-serif; 
+  background-color: var(--background-color); 
+  color: var(--font-color); 
   margin: 0;
   padding: 0;
 }
@@ -36,9 +35,8 @@ a {
 }
 
 /* Header typography */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4 {
   font-family: 'Degular Display', serif; /* Use Degular Display for headers */
-  color: var(--font-color); /* Header color */
   font-weight: 600; /* Default weight for headers */
 }
 
@@ -54,3 +52,21 @@ h2 {
 h3 {
   font-size: 1.75rem; /* Adjust the size for h3 */
 }
+
+
+h5, h6 {
+  font-family: 'Inter', serif; /* Use Degular Display for headers */
+  color: var(--font-color); /* Header color */
+  font-weight: 400; /* Default weight for headers */
+  margin: 1rem;
+}
+
+/* Specific adjustments for h1, h2, h3 */
+h5 {
+  font-size: 2rem; /* Adjust the size for h1 */
+}
+
+h6 {
+  font-size: 2rem; /* Adjust the size for h2 */
+}
+

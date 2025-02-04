@@ -3,8 +3,8 @@
     display: flex;
     justify-content: space-between; /* Space out logo and navigation */
     align-items: center;
-    padding: 20px;
-    background-color: #201E1E; /* Dark background for the navbar */
+    padding: 1.8rem 6rem;
+    background-color: var(--background-color); /* Use global background color */
     box-sizing: border-box;
   }
   
@@ -15,24 +15,25 @@
   }
   
   .logoImage {
-    height: 40px; /* Adjust height as needed */
+    height: 3rem;
+    width: 100%;
   }
   
   /* Navigation Links */
   .navLinks {
     display: flex;
-    gap: 20px; /* Space out the links */
-    background-color: #252323; /* Accent grey background */
-    padding: 8px 20px; /* Padding inside the rounded rectangle */
-    border-radius: 25px; /* Rounded rectangle */
+    gap: 6rem; /* Space out the links */
+    background-color: var(--accent-grey); /* Use global accent grey */
+    padding: 1.6rem 5rem; /* Padding inside the rounded rectangle */
+    border-radius: 2rem; /* Rounded rectangle */
   }
   
   /* Style for individual links */
   .navLinks a {
-    color: #FFFFFF; /* White font color */
-    font-family: 'Inter', sans-serif; /* Inter font for links */
+    color: var(--font-color); /* Use global white font color */
+    font-family: 'Inter', sans-serif; /* Use global Inter font */
     font-weight: 600; /* Semi-bold font weight */
-    font-size: 14px; /* 14px font size */
+    font-size: 0.8rem; /* Keep font size equivalent to 14px */
     text-decoration: none; /* Remove underline */
     display: flex;
     align-items: center; /* Center text vertically */
