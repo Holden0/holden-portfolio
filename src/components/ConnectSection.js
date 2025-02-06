@@ -28,10 +28,10 @@ const ConnectSection = () => {
           className={styles.iconBackground}
         >
           <Image
-            src="/linkedInLogo.svg"
+            src="/linkedIn.svg"
             alt="LinkedIn"
-            width={30}
-            height={30}
+            width={26}
+            height={26}
             className={styles.icon}
           />
         </a>
