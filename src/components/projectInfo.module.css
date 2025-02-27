@@ -1,0 +1,161 @@
+/* .cardContainer {
+    width: 100%;
+    border: solid 1px var(--faded-grey);
+    border-radius: 1.6rem;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.tableTopMiddle {
+    border-left: solid 1px var(--faded-grey);
+    border-right: solid 1px var(--faded-grey);
+}
+
+.tableTopMiddle, .tableTopLeft, .tableTopRight {
+    display: flex;
+    width: 100%;
+}
+
+.tableTopMiddleContent {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tableTopMiddleContent p {
+    white-space: nowrap;
+}
+
+
+.tableTopLeftContent, .tableTopRightContent {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: auto;
+}
+
+
+.p, .h4 {
+    margin: 0rem;
+} */
+
+/* .card {
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 800px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .roleSection, .teamSection, .yearSection {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .roleLabel, .teamLabel, .yearLabel {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .roleTag {
+    display: inline-block;
+    background: #F5A623;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .teamInfo, .yearInfo {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .projectType {
+    padding: 15px 0;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .projectLabel {
+    font-size: 14px;
+    color: #666;
+    min-width: 100px;
+  }
+  
+  .projectInfo {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .mainContent {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    padding-top: 20px;
+  }
+  
+  .deliverables h3, .techStack h3 {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 12px;
+  }
+  
+  .deliverables ul, .techStack ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .techStack {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .deliverables li, .techStack li {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+  
+    .mainContent {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  
+    .techStack {
+      grid-template-columns: 1fr;
+    }
+  } */

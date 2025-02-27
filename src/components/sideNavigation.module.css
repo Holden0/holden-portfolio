@@ -1,0 +1,115 @@
+.sideNav {
+    position: fixed;
+    top: 40vh;
+    right: 30px; /* Moves it closer to the content */
+    width: 140px; /* Decreased width */
+    background: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .sideNav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navItem {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Reduce space between circle and text */
+    position: relative;
+    margin-bottom: 30px; /* Adjust spacing between items */
+    white-space: nowrap; /* Prevent text wrapping */
+  }
+  
+  .circle {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #292626;
+    color: #1a1818;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    font-weight: 600;
+    font-family: var(--font-neue);
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .navText {
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+    color: #686868;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    font-family: 'degular display', serif;
+    font-weight: 300;
+  }
+  
+  .connector {
+    position: absolute;
+    width: 1px;
+    height: 40px;
+    background-color: #252323;
+    left: 14px;
+    top: 28px;
+    z-index: -1;
+  }
+  
+  /* Keep all past sections highlighted */
+  .active .circle {
+    background-color: #686868;
+  }
+  
+  .active .navText {
+    /* color: #ffcc00; */
+    /* color: #252323; */
+  }
+  
+  @media (max-width: 768px) {
+    .sideNav {
+      display: none;
+    }
+  }
+
+  @media (max-width: 1360px) {
+    .sideNav {
+        position: fixed;
+        top: 40vh;
+        right: 10px; /* Moves it closer to the content */
+        width: 140px; /* Decreased width */
+        background: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+  }
+
+  @media (max-width: 1315px) {
+    .sideNav {
+        position: fixed;
+        top: 40vh;
+        right: 0px; /* Moves it closer to the content */
+        width: 140px; /* Decreased width */
+        background: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+  }
+
+  @media (max-width: 1314px) {
+    .sideNav {
+        display: none;
+
+      }
+  }
+
+  

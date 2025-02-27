@@ -1,0 +1,171 @@
+.pageWrapper {
+    width: 100%;
+  }
+  
+  .content {
+    /* max-width: 60rem; */
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 0.4rem 4rem;
+    margin-top: 6rem;
+
+    /* max-width: 65rem;
+    margin-left: auto;
+    margin-right: auto; */
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    gap: 4rem;
+    margin-bottom: 8em;
+    margin-top: 12rem;
+    
+    /* width: calc(100% - 6rem); */
+  }
+  
+  
+  .headingSection01 {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+    align-items: center;
+   
+  }
+
+  .name {
+    /* color: var(--highlight-yellow); */
+    color: var(--font-color);
+  }
+  
+  .headingText h1 {
+    font-family: 'Degular Display', serif;
+    font-size: 4rem ;
+    font-weight: 600;
+    margin: 0rem;
+    line-height: 4rem;
+  }
+
+  .headingText p {
+    /* font-family: 'Inter', sans-serif; */
+    font-family: var(--font-neue);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+    margin: 0rem;
+    color: var(--faded-grey);
+  }
+ 
+ .bio p {
+    font-size: 1.4rem;
+    /* font-family: 'inter', sans-serif; */
+    font-family: var(--font-neue);
+    color: #f9f9f9;
+    font-weight: 400;
+    margin-bottom: 1.2rem;
+    margin-top: 0rem;
+    line-height: 2rem;
+ }
+ 
+ .pfp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.educationSection h1{
+    font-size: 2.3rem;
+    border-bottom: solid 1px #2F2F2F;
+    margin: 0rem;
+}
+
+.school p {
+    margin: 0.4rem 0rem 0rem 0rem;
+    font-size: 1.6rem;
+    /* font-family: 'Inter', sans-serif; */
+    font-family: var(--font-neue);
+    font-weight: 500;
+    line-height: 2rem;
+}
+
+
+.program p{
+    font-size: 1.2rem;
+    /* font-family: 'Inter', sans-serif; */
+    font-family: var(--font-neue);
+    font-weight: 400;
+    margin: 0rem;
+}
+
+.date p {
+    margin: 0rem;
+    font-size: 1.16em;
+    font-weight: 300;
+    color: var(--faded-grey);
+}
+
+.skillsSection {
+    margin-top: 2rem;
+}
+
+
+.skillsTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skillsTitle h1{
+    margin: 0rem;
+    font-size: 2.3rem;
+}
+
+.skillsTitle p{
+    margin: 0rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--faded-grey);
+
+}
+
+.skillCardsContainers {
+    margin-top: 1.4rem;
+
+}
+.skillCardsContainers p {
+    font-size: 1.1rem;
+    /* font-family: 'Inter', sans-serif; */
+        font-family: var(--font-neue);
+    color: var(--faded-grey);
+    font-weight: 500;
+    margin: 0rem;
+    line-height: 1.8rem;
+    border-bottom: solid 1.5px #2F2F2F;
+}
+
+.skillCards {
+    width: 100%;
+    max-width: 65rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 2em;
+    margin-top: 1em;
+  }
+  
+  
+  .card {
+    flex: 1 1 calc(50% - 1rem);
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (max-width: 768px) {
+    .card {
+        flex: 1 1 100%;
+
+        
+      }
+  }

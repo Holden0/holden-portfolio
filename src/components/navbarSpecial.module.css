@@ -1,0 +1,150 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(250, 250, 250 0.7);
+    backdrop-filter: blur(8px);
+    border-bottom: solid 1px #f2f2f230;
+  }
+  
+  .container {
+    max-width: 1440px; /* or your desired max-width */
+    margin: 0 auto;
+    padding: 1rem 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    color: #000000;
+  }
+  
+  .logoImage {
+    height: 3rem;
+    width: auto; /* Changed from 100% to auto to maintain aspect ratio */
+    max-width: 100%;
+  }
+  
+  .navLinks {
+    display: flex;
+    gap: 6rem;
+    background-color: #FAFAFA;
+    padding: 1.5rem 5rem;
+    border-radius: 2rem;
+  }
+  
+  .navLinks a {
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 0.8rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+  }
+  
+  /* Hamburger menu button */
+  .menuButton {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 1001;
+  }
+  
+  .menuIcon {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #000000;
+    position: relative;
+    transition: background-color 0.3s;
+
+  }
+  
+  .menuIcon::before,
+  .menuIcon::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #000000;
+    transition: transform 0.3s;
+  }
+  
+  .menuIcon::before {
+    top: -8px;
+  }
+  
+  .menuIcon::after {
+    bottom: -8px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 1024px) {
+    .container {
+        padding: 1rem 3rem;
+    }
+    
+    .navLinks {
+        gap: 3rem;
+        padding: 1.5rem 3rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .menuButton {
+        display: block;
+    }
+  
+    .navLinks {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 250px;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 6rem 2rem;
+        background-color: #FAFAFA;
+        transition: right 0.3s ease;
+        border-radius: 0;
+    }
+  
+    .navLinks.active {
+        right: 0;
+    }
+  
+    .menuButton.active .menuIcon {
+        background-color: transparent;
+    }
+  
+    .menuButton.active .menuIcon::before {
+        transform: rotate(45deg) translate(5px, 6px);
+    }
+  
+    .menuButton.active .menuIcon::after {
+        transform: rotate(-45deg) translate(5px, -6px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    .logoImage {
+        height: 2.5rem;
+    }
+  }
+  
+  

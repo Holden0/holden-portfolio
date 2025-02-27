@@ -175,6 +175,7 @@ a.secondary {
   max-width: 55rem;
   margin: 0 auto;
   padding: 0.4rem 4rem;
+  margin-top: 6rem;
 }
 
 .headingSection {
@@ -220,9 +221,14 @@ a.secondary {
 }
 
 .headingBody h5 {
-  margin: 1.5rem 0rem;
+  /* margin: 1.5rem 0rem; */
+  margin: 1.5rem 0rem 0rem 0rem;
   line-height: 2.1rem;
   font-size: 2rem;
+  /* font-family: 'NeueMontreal', sans-serif;
+  font-weight: 300;  */
+  font-family: var(--font-neue);
+  font-weight: 400;
 }
 
 .projectSection {
@@ -234,12 +240,22 @@ a.secondary {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 2rem;
+  margin-bottom: 8em;
+  width: calc(100% - 4rem);
 }
 
 .project {
   flex: 1 1 calc(50% - 1rem);
   display: flex;
   justify-content: center;
+}
+
+.pointer {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin: 0 auto;
+  padding: 0rem 0rem 0rem 5rem;
 }
 
 @media (max-width: 768px) {
