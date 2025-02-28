@@ -43,7 +43,7 @@
 
 .navLinks a {
   color: var(--font-color);
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-neue),'Inter', sans-serif;
   font-weight: 500;
   font-size: 0.8rem;
   text-decoration: none;

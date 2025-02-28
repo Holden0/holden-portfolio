@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import styles from './navbarSpecial.module.css';
+import { TransitionLink } from './utils/TransitionLink';
 
 export default function NavbarSpecial() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,9 +15,9 @@ export default function NavbarSpecial() {
     <nav className={styles.navbar}>
       <div className={styles.container}>
         <div className={styles.logo}>
-          <a href="/">
-            <img src="/hb-logo-dark.svg" alt="Logo" className={styles.logoImage} /> 
-          </a>
+        <TransitionLink href="/">
+            <img src="/hb-logo-dark.svg" alt="Logo" className={styles.logoImage} />
+          </TransitionLink>
         </div>
         
         <button className={`${styles.menuButton} ${isMenuOpen ? styles.active : ''}`} onClick={toggleMenu}>

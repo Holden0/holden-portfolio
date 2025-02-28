@@ -58,6 +58,6 @@ export const neueFont = localFont({
     ],
     display: 'swap',
     preload: true,
-    fallback: ['system-ui', 'arial'],
+    fallback: ['inter', 'arial'],
     variable: '--font-neue'
 })

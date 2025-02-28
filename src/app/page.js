@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import SocialConnect from "../components/ConnectSection";
 import ProjectCard from "../components/ProjectCard";
 import Footer from "../components/Footer";
+import { TransitionLink } from "../components/utils/TransitionLink";
 
 export default function HomePage() {
   return (
@@ -38,7 +39,7 @@ export default function HomePage() {
               seamless user experience for modern web and mobile applications
             </h5>
           </div>
-          <div className={styles.pointer}>
+          {/* <div className={styles.pointer}>
             <Image
               src="/pointer.svg"
               alt="Figma Pointer"
@@ -46,13 +47,13 @@ export default function HomePage() {
               height={75.96}
               className={styles.pointer_icon}
             />
-          </div>
+          </div> */}
         </div>
         <SocialConnect />
       </div>
       <div className={styles.projectSection}>
         <div className={styles.project}>
-          <a href="/projects/fairshare">
+          <TransitionLink href="/projects/fairshare">
             <ProjectCard
               title="Bill Splitting App"
               date="2024/2025"
@@ -63,10 +64,10 @@ export default function HomePage() {
               dateColor="#8D8D93"
               infoColor="#8D8D93"
             />
-          </a>
+          </TransitionLink>
         </div>
         <div className={styles.project}>
-          <a href="/projects/onward">
+          <TransitionLink href="/projects/onward">
             <ProjectCard
               title="Mock Interview App"
               date="2024/2025"
@@ -77,13 +78,13 @@ export default function HomePage() {
               dateColor="#8D8D93"
               infoColor="#8D8D93"
             />
-          </a>
+          </TransitionLink>
         </div>
         <div className={styles.project}>
           <ProjectCard
-            title="Community Marketplace"
-            date="2023"
-            info="Mobile, Tablet"
+            title="In Development"
+            date="XXXX"
+            info="XXXX, XXXXX"
             imageSrc="/neighbourly-mockup.webp"
             backgroundColor="#252323"
             titleColor="#FFFFFF"
@@ -92,7 +93,7 @@ export default function HomePage() {
           />
         </div>
         <div className={styles.project}>
-          <a href="/projects/drawings">
+          <TransitionLink href="/projects/drawings">
           <ProjectCard
             title="Other Work"
             date="2024/2025"
@@ -104,10 +105,10 @@ export default function HomePage() {
             dateColor="#8D8D93"
             infoColor="#8D8D93"
           />
-          </a>
+          </TransitionLink>
         </div>
         
-        <div className={styles.project}>
+        {/* <div className={styles.project}>
           <ProjectCard
             title="Other Work"
             date="2024/2025"
@@ -119,8 +120,8 @@ export default function HomePage() {
             dateColor="#8D8D93"
             infoColor="#8D8D93"
           />
-        </div>
-        <div className={styles.project}>
+        </div> */}
+        {/* <div className={styles.project}>
           <ProjectCard
             title="Naughty Dog Brewing"
             date="2024/2025"
@@ -132,7 +133,7 @@ export default function HomePage() {
             dateColor="#DDDDE1"
             infoColor="#DDDDE1"
           />
-        </div>
+        </div> */}
       </div>
       <Footer />
     </div>

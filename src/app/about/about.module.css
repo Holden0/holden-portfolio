@@ -38,7 +38,7 @@
   }
   
   .headingText h1 {
-    font-family: 'Degular Display', serif;
+    font-family: "degular-display", Helvetica, sans-serif;
     font-size: 4rem ;
     font-weight: 600;
     margin: 0rem;

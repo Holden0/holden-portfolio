@@ -63,9 +63,9 @@
   /* Title */
   .title {
     font-size: 2.5rem;
-    font-weight: 500;
+    font-weight: 600;
     color: #000000;
-    font-family: 'degular display', serif;
+    font-family: "degular-display", Helvetica, sans-serif;
     /* color: #F9F9F9; */
     line-height: 2.5rem;
     margin-bottom: 0rem;
@@ -225,7 +225,7 @@
   
   .body_inter_16_regular p {
     font-family: var(--font-neue);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 400;
     margin-bottom: 0rem;
     margin-top: 0rem;
@@ -244,8 +244,8 @@
   }
   
   .heading_degular_36_light p {
-    font-family: 'degular display', serif;
-    font-size: 3rem;
+    font-family: "degular-display", Helvetica, sans-serif;
+    font-size: 4rem;
     line-height: 4.5rem;
     font-weight: 300;
     margin-bottom: 1rem;
@@ -263,7 +263,7 @@
   }
   
   .quote p {
-    font-family: 'degular display', serif;
+    font-family: "degular-display", Helvetica, sans-serif;
     font-size: 2.5rem;
     font-weight: 600;
     line-height: 3rem;
@@ -282,7 +282,7 @@
   
   .quotation01,
   .quotation02 {
-    font-family: 'degular display', serif;
+    font-family: "degular-display", Helvetica, sans-serif;
     font-size: 10rem;
     font-weight: 600;
     color: #F3F3F3;
@@ -738,7 +738,7 @@
   
   .body_inter_16_regular_right p{
     font-family: var(--font-neue);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 400;
     /* color: #f9f9f9; */
     color: #201E1E;
@@ -748,7 +748,7 @@
   
   .body_inter_16_regular_right_margin {
     font-family: var(--font-neue);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 400;
     /* color: #f9f9f9; */
     color: #201E1E;
@@ -782,7 +782,7 @@
   }
   .body_inter_16_regular01 p{
     font-family: var(--font-neue);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 400;
     /* color: #f9f9f9; */
     color: #000000;
@@ -805,8 +805,8 @@
     margin-top: 0rem;
   }
   .heading_degular_36_light_problem p {
-    font-family: 'degular display', serif;
-    font-size: 3rem;
+    font-family: "degular-display", Helvetica, sans-serif;
+    font-size: 4rem;
     line-height: 4rem;
     font-weight: 300;
     margin-bottom: 1rem;
@@ -827,8 +827,8 @@
   
   }
   .heading_degular_36_light_research p{
-    font-family: 'degular display', serif;
-    font-size: 3rem;
+    font-family: "degular-display", Helvetica, sans-serif;
+    font-size: 4rem;
     line-height: 4rem;
     font-weight: 300;
     margin-bottom: 1rem;
@@ -858,8 +858,8 @@
     margin-top: 0rem;
   }
   .heading_degular_36_light_design p{
-    font-family: 'degular display', serif;
-    font-size: 3rem;
+    font-family: "degular-display", Helvetica, sans-serif;
+    font-size: 4rem;
     line-height: 4rem;
     font-weight: 300;
     margin-bottom: 1rem;

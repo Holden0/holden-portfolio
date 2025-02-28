@@ -2,13 +2,16 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./footer.module.css";
+import { TransitionLink } from "./utils/TransitionLink";
 
 const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.content}>
         <div className={styles.logo}>
-            <img src="/hb-logo.svg" alt="Logo" className={styles.logoImage} /> 
+        <TransitionLink href="/">
+            <img src="/hb-logo.svg" alt="Logo" className={styles.logoImage} />
+          </TransitionLink>
         </div>
         <nav className={styles.navLinks}>
           <Link href="/about" className={styles.link}>ABOUT</Link>

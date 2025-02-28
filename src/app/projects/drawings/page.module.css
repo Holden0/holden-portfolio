@@ -185,7 +185,7 @@
 .galleryTitle {
   font-size: 4rem;
   font-weight: 600;
-  font-family: 'degular display', serif;
+  font-family: "degular-display", Helvetica, sans-serif;
   margin-bottom: 2rem;
   background: linear-gradient(45deg, #333333 30%, #9f9f9f 70%);
   background-size: 200% auto;

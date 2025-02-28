@@ -11,6 +11,7 @@ import Link from "next/link";
 import ConnectSection from "../../../components/ConnectSection.js";
 import ProjectCard from "../../../components/ProjectCard.js";
 import SideNavigation from "../../../components/SideNavigation.js";
+import { TransitionLink } from "../../../components/utils/TransitionLink";
 
 export default function Onward() {
   return (
@@ -735,7 +736,7 @@ export default function Onward() {
       </div>
       <div className={styles.projectContainer}>
         <div className={styles.project}>
-          <a href="/projects/fairshare">
+          <TransitionLink href="/projects/fairshare">
             <ProjectCard
               title="Bill Splitting App"
               date="2024/2025"
@@ -746,13 +747,13 @@ export default function Onward() {
               dateColor="#8D8D93"
               infoColor="#8D8D93"
             />
-          </a>
+          </TransitionLink>
         </div>
         <div className={styles.project}>
           <ProjectCard
-            title="Community Marketplace"
-            date="2023"
-            info="Mobile, Web, Tablet"
+            title="In Development"
+            date="XXXX"
+            info="XXXXX, XXXXXX"
             imageSrc="/neighbourly-mock.png"
             backgroundColor="#252323"
             titleColor="#FFFFFF"

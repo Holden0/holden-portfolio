@@ -185,7 +185,7 @@ a.secondary {
 }
 
 .text h1 {
-  font-family: 'degular', sans-serif;
+  font-family: "degular-display", Helvetica, sans-serif;
   font-size: 4rem;
   font-weight: bold;
   color: var(--font-color);
@@ -240,6 +240,7 @@ a.secondary {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 2rem;
+  margin-top: 2rem;
   margin-bottom: 8em;
   width: calc(100% - 4rem);
 }

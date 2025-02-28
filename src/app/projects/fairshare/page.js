@@ -667,6 +667,7 @@ import Link from "next/link";
 import ConnectSection from "../../../components/ConnectSection.js";
 import ProjectCard from "../../../components/ProjectCard.js";
 import SideNavigation from "../../../components/SideNavigation.js";
+import { TransitionLink} from "../../../components/utils/TransitionLink";
 
 export default function Fairshare() {
   // Common image props object to reduce repetition
@@ -795,10 +796,10 @@ export default function Fairshare() {
         </div>
         <div className={styles.quote}>
           <p>
-            <span className={styles.quotation01}>"</span>
-            Users want a solution that simplifies group expenses, tracks
-            spending effortlessly, and adapts to their unique financial goals
-            <span className={styles.quotation02}>"</span>
+            {/* <span className={styles.quotation01}>"</span> */}
+            "Users want a solution that simplifies group expenses, tracks
+            spending effortlessly, and adapts to their unique financial goals"
+            {/* <span className={styles.quotation02}>"</span> */}
           </p>
         </div>
         <div className={styles.mockup_top02}>
@@ -1179,41 +1180,32 @@ export default function Fairshare() {
       
       {/* Project cards */}
       <div className={styles.projectContainer}>
-        {[
-          {
-            title: "Mock Interview App",
-            date: "2024/2025",
-            info: "Mobile, Web, Tablet",
-            imageSrc: "/onward-mockup01.png",
-            backgroundColor: "#FAFAFA",
-            titleColor: "#000000",
-            dateColor: "#8D8D93",
-            infoColor: "#8D8D93"
-          },
-          {
-            title: "Community Marketplace",
-            date: "2023",
-            info: "Mobile, Web, Tablet",
-            imageSrc: "/neighbourly-mock.png",
-            backgroundColor: "#252323",
-            titleColor: "#FFFFFF",
-            dateColor: "#8D8D93",
-            infoColor: "#8D8D93"
-          }
-        ].map((project, index) => (
-          <div key={index} className={styles.project}>
+        <div className={styles.project}>
+          <TransitionLink href="/projects/onward">
             <ProjectCard
-              title={project.title}
-              date={project.date}
-              info={project.info}
-              imageSrc={project.imageSrc}
-              backgroundColor={project.backgroundColor}
-              titleColor={project.titleColor}
-              dateColor={project.dateColor}
-              infoColor={project.infoColor}
+              title="Mock Interview App"
+              date="2024/2025"
+              info="Web"
+              imageSrc="/onward-mockup.webp"
+              backgroundColor="#FAFAFA"
+              titleColor="#000000"
+              dateColor="#8D8D93"
+              infoColor="#8D8D93"
             />
-          </div>
-        ))}
+          </TransitionLink>
+        </div>
+        <div className={styles.project}>
+          <ProjectCard
+            title="In Development"
+            date="XXXX"
+            info="XXXXX, XXXXXX"
+            imageSrc="/neighbourly-mock.png"
+            backgroundColor="#252323"
+            titleColor="#FFFFFF"
+            dateColor="#8D8D93"
+            infoColor="#8D8D93"
+          />
+        </div>
       </div>
       <Footer />
     </div>
