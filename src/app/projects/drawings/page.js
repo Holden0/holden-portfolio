@@ -63,6 +63,20 @@ export default function Drawings() {
                 </div>
                 <p className={styles.artworkCaption}>Abstract Composition #1</p>
               </div>
+
+              <div className={styles.artworkItemLarge}>
+                <div className={styles.imageWrapper}>
+                  <Image
+                    src="/hannya-mask.webp"
+                    alt="Drawing 1"
+                    width={900}
+                    height={1200}
+                    className={styles.artworkImageLarge}
+                    quality={90}
+                  />
+                </div>
+                <p className={styles.artworkCaption}>Abstract Composition #1</p>
+              </div>
             </div>
           </div>
         </div>
