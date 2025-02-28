@@ -684,7 +684,7 @@ export default function Fairshare() {
         <div className={styles.caseStudyIntro}>
           <div className={styles.leftColumn}>
             <Image
-              src="/fairShare-logo.svg"
+              src="/fairShare-Logo.svg"
               alt="Project Logo"
               width={66.27}
               height={83.32}
