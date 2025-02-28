@@ -27,7 +27,7 @@ export default function Drawings() {
                 <div className={styles.imageWrapper}>
                   <Image
                     src="/anatomy-face.webp"
-                    alt="Drawing 2"
+                    alt="anatomy drawing"
                     width={900}
                     height={1200}
                     className={styles.artworkImageLarge}
@@ -41,7 +41,7 @@ export default function Drawings() {
                 <div className={styles.imageWrapper}>
                   <Image
                     src="/tribe-drawing.webp"
-                    alt="Drawing 3"
+                    alt="tribe drawing"
                     width={900}
                     height={1200}
                     className={styles.artworkImageLarge}
@@ -54,7 +54,7 @@ export default function Drawings() {
                 <div className={styles.imageWrapper}>
                   <Image
                     src="/face-drawing.webp"
-                    alt="Drawing 1"
+                    alt="face drawing"
                     width={900}
                     height={1200}
                     className={styles.artworkImageLarge}
@@ -68,7 +68,7 @@ export default function Drawings() {
                 <div className={styles.imageWrapper}>
                   <Image
                     src="/hannya-mask.webp"
-                    alt="Drawing 1"
+                    alt="hannya mask"
                     width={900}
                     height={1200}
                     className={styles.artworkImageLarge}

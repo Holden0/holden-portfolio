@@ -97,7 +97,7 @@ export default function HomePage() {
           <ProjectCard
             title="Other Work"
             date="2024/2025"
-            info="Product Design, Graphic Design"
+            info="Graphic Design"
             imageSrc="/otherWork.webp"
             backgroundColor="#FFFFFF"
             // backgroundColor="#FAFAFA"
