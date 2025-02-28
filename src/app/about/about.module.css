@@ -168,4 +168,11 @@
 
         
       }
+
+      .headingSection01 {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        align-items: center;
+      }
   }
