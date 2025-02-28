@@ -185,7 +185,7 @@ a.secondary {
 }
 
 .text h1 {
-  font-family: 'Degular Display', sans-serif;
+  font-family: 'degular', sans-serif;
   font-size: 4rem;
   font-weight: bold;
   color: var(--font-color);
