@@ -1199,7 +1199,7 @@ export default function Fairshare() {
             title="In Development"
             date="XXXX"
             info="XXXXX, XXXXXX"
-            imageSrc="/neighbourly-mock.png"
+            imageSrc="/neighbourly-mockup.webp"
             backgroundColor="#252323"
             titleColor="#FFFFFF"
             dateColor="#8D8D93"
