@@ -974,9 +974,15 @@ export default function Fairshare() {
         </div>
         
         {/* Carousel section */}
-        <div className={styles.caraouselContainer}>
-          <Carousel />
-        </div>
+        <div className={styles.wireframeMockup01}>
+            <Image
+              src="/fairshare-wireframes-mock.webp"
+              alt="Mockup"
+              width={3584}
+              height={2240}
+              className={styles.mockup}
+            />
+          </div>
         
         {/* Style guide section */}
         <div className={styles.projectContent}>
