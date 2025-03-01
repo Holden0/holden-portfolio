@@ -12,17 +12,17 @@ const ConnectSection = ({ iconBackgroundColor, textColor }) => {
             <span className={styles.text} style={{ color: textColor }}>Connect with me!</span>
             <div className={styles.socialLinks}>
               <a
-                href="https://twitter.com/yourTwitterHandle"
+                href="https://www.behance.net/holdenbudiman"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.iconBackground}
                 style={{ backgroundColor: iconBackgroundColor }}
               >
                 <Image
-                  src="/twitter.svg"
-                  alt="Twitter"
-                  width={26.4}
-                  height={23.1}
+                  src="/behance-logo.svg"
+                  alt="behance"
+                  width={30}
+                  height={30}
                   className={styles.icon}
                 />
               </a>
