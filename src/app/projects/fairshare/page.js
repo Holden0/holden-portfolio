@@ -980,7 +980,7 @@ export default function Fairshare() {
               alt="Mockup"
               width={3584}
               height={2240}
-              className={styles.mockup}
+              className={styles.wireframeMockup}
             />
           </div>
         
