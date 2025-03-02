@@ -1,0 +1,221 @@
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #45516C;
+}
+
+.content {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  padding-top: 6rem; /* Space for navbar */
+  box-sizing: border-box; /* Important: ensures padding is included in width */
+}
+
+.projectContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.projectTitle {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.projectDescription {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+/* Paragraph row styles */
+.paragraphRow {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0 6rem 0;
+  gap: 8rem;
+}
+
+.paragraphColumn {
+  flex: 1;
+}
+
+.sectionText {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  font-family: var(--font-neue), 'Inter', sans-serif;
+}
+
+/* Main visual section with the text image and can */
+.mainVisualSection {
+  position: relative;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 16rem; /* Significantly increased from 8rem to account for larger can */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Removed overflow: hidden which was cutting off the can */
+}
+
+/* Container for the naughty-dog-text image - fixed spacing issues */
+.textImageContainer {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box; /* Important: ensures padding is included in width */
+}
+
+/* Style for the text image itself - constrain properly */
+.textImage {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Container for the can image - improved centering at all screen sizes */
+.canImageContainer {
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -30%); /* Center horizontally, adjust vertical position */
+  z-index: 10;
+  overflow: visible;
+  width: auto; /* Let the image determine the width */
+  display: flex;
+  justify-content: center; /* Ensure inner content is centered */
+  align-items: center; /* Ensure inner content is centered vertically */
+}
+
+/* Style for the can image - 50% LARGER */
+.canImage {
+  max-width: 1350px; /* Increased by 50% from 900px */
+  width: 100%; /* Full width within its container */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Center the image */
+}
+
+/* Connect section styling */
+.connectSection {
+  padding: 4rem 0;
+  max-width: 1200px;
+  margin: 8rem auto 0; /* Consolidated margin declaration */
+  width: calc(100% - 4rem);
+}
+
+.project {
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .canImage {
+    max-width: 1125px; /* Increased by 50% from 750px */
+    width: 95%;
+  }
+}
+
+@media (max-width: 992px) {
+  .canImage {
+    max-width: 975px; /* Increased by 50% from 650px */
+    width: 90%;
+  }
+  
+  .mainVisualSection {
+    margin-bottom: 14rem; /* Adjusted for this screen size */
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 0 1rem;
+    padding-top: 5rem;
+  }
+  
+  .projectTitle {
+    font-size: 2rem;
+  }
+  
+  .projectContainer {
+    margin-top: 6rem; /* Smaller margin on mobile */
+  }
+  
+  .paragraphRow {
+    flex-direction: column;
+    margin: 2rem 0;
+  }
+  
+  .mainText,
+  .mirroredText {
+    font-size: 16vw; /* Bigger relative font on mobile */
+  }
+  
+  .connectSection {
+    margin-top: 24rem;
+  }
+  
+  .textImageContainer {
+    width: 100%;
+    /* Remove any leftover padding */
+    padding: 0;
+  }
+  
+  .textImage {
+    max-width: 100%; /* Ensure it doesn't extend beyond container */
+  }
+  
+  .canImageContainer {
+    width: 100%; /* Full width container on mobile */
+    transform: translate(-50%, -25%); /* Adjust vertical position on mobile */
+  }
+  
+  .canImage {
+    width: 85%; /* Slightly larger percentage on mobile */
+    max-width: 750px; /* Increased by 50% from 500px */
+  }
+  
+  .mainVisualSection {
+    margin-bottom: 12rem; /* Moved this up to avoid duplicate declaration */
+  }
+}
+
+@media (max-width: 480px) {
+  .canImageContainer {
+    transform: translate(-50%, -20%); /* Further adjust vertical position on smaller screens */
+  }
+  
+  .canImage {
+    width: 80%; /* Increased from 60% on small screens */
+    max-width: 525px; /* Increased by 50% from 350px */
+  }
+  
+  .mainVisualSection {
+    margin-bottom: 10rem; /* Adjusted for smallest screens */
+  }
+  
+  .connectSection {
+    margin-top: 20rem; /* Adjusted for smallest screens */
+  }
+}
+
+/* Clean up unused CSS classes */
+/* Remove these if they're not used anywhere */
+.mainText,
+.mirroredText,
+.imageOverlay,
+.overlappingImage {
+  /* These classes appear in media queries but aren't defined in the main styles */
+  /* Consider removing them if they're not used */
+}

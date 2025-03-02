@@ -110,19 +110,6 @@ export default function HomePage() {
         
         {/* <div className={styles.project}>
           <ProjectCard
-            title="Other Work"
-            date="2024/2025"
-            info="Product Design, Graphic Design"
-            imageSrc="/otherWork.webp"
-            backgroundColor="#FFFFFF"
-            // backgroundColor="#FAFAFA"
-            titleColor="#000000"
-            dateColor="#8D8D93"
-            infoColor="#8D8D93"
-          />
-        </div> */}
-        {/* <div className={styles.project}>
-          <ProjectCard
             title="Naughty Dog Brewing"
             date="2024/2025"
             info="Product Design, Graphic Design"
@@ -132,6 +119,32 @@ export default function HomePage() {
             titleColor="#F9F9F9"
             dateColor="#DDDDE1"
             infoColor="#DDDDE1"
+          />
+        </div> */}
+        <div className={styles.project}>
+          <ProjectCard
+            title="In Development"
+            date="XXXX/XXXX"
+            info="XXXXXX XXXXXX"
+            imageSrc="/naughty-dog-mockup01.webp"
+            backgroundColor="#45516C"
+            // backgroundColor="#FAFAFA"
+            titleColor="#F9F9F9"
+            dateColor="#DDDDE1"
+            infoColor="#DDDDE1"
+          />
+        </div>
+                {/* <div className={styles.project}>
+          <ProjectCard
+            title="Other Work"
+            date="2024/2025"
+            info="Product Design, Graphic Design"
+            imageSrc="/otherWork.webp"
+            backgroundColor="#FFFFFF"
+            // backgroundColor="#FAFAFA"
+            titleColor="#000000"
+            dateColor="#8D8D93"
+            infoColor="#8D8D93"
           />
         </div> */}
       </div>

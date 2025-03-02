@@ -383,11 +383,14 @@
   margin: 0 auto 8rem;
   display: flex;
   flex-direction: row;
-  column-gap: 2rem;
+  flex-wrap: wrap; /* Add flex-wrap */
+  gap: 2rem; /* Use gap instead of column-gap */
+  padding: 0 2rem;
 }
 
 .project {
-  width: 100%;
+  flex: 0 0 calc(50% - 1rem); /* Make each project take half the container minus gap */
+  max-width: calc(50% - 1rem);
   height: auto;
 }
 
@@ -594,12 +597,6 @@
     padding: 0 2rem;
   }
 
-  .projectContainer {
-    flex-direction: column;
-    row-gap: 2rem;
-    padding: 0 2rem;
-  }
-  
   .caseStudyIntro,
   .personas {
     flex-direction: column;
@@ -621,6 +618,10 @@
   .my_role_column {
     align-items: flex-end;
   }
+  .project {
+    flex: 1 1 100%; /* Make projects full width on mobile */
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -628,3 +629,13 @@
     display: none;
   }
 }
+
+
+@media (max-width: 900px) {
+  .projectContainer {
+    padding: 0 2rem;
+  }
+  
+}
+
+

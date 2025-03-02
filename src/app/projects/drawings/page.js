@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import styles from "./page.module.css";
+import styles from "./drawings.module.css";
 import NavbarSpecial from "../../../components/NavbarSpecial";
 import FooterSpecial from "../../../components/FooterSpecial";
 import ConnectSection from "../../../components/ConnectSection.js";

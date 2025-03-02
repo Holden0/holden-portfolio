@@ -245,10 +245,17 @@ a.secondary {
   width: calc(100% - 4rem);
 }
 
-.project {
+/* .project {
   flex: 1 1 calc(50% - 1rem);
   display: flex;
   justify-content: center;
+} */
+
+.project {
+  flex: 0 0 calc(50% - 1rem);
+  display: flex;
+  justify-content: center;
+  max-width: calc(50% - 1rem);
 }
 
 .pointer {
@@ -260,7 +267,11 @@ a.secondary {
 }
 
 @media (max-width: 768px) {
+  /* .project {
+    flex: 1 1 100%;
+  } */
   .project {
     flex: 1 1 100%;
+    max-width: 100%;
   }
 }

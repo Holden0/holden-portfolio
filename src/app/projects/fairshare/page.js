@@ -1203,13 +1203,14 @@ export default function Fairshare() {
         <div className={styles.project}>
           <ProjectCard
             title="In Development"
-            date="XXXX"
-            info="XXXXX, XXXXXX"
-            imageSrc="/neighbourly-mockup.webp"
-            backgroundColor="#252323"
-            titleColor="#FFFFFF"
-            dateColor="#8D8D93"
-            infoColor="#8D8D93"
+            date="XXXX/XXXX"
+            info="xxxxx xxxxxx"
+            imageSrc="/naughty-dog-mockup01.webp"
+            backgroundColor="#45516C"
+            // backgroundColor="#FAFAFA"
+            titleColor="#F9F9F9"
+            dateColor="#DDDDE1"
+            infoColor="#DDDDE1"
           />
         </div>
       </div>
