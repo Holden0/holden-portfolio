@@ -85,6 +85,7 @@
     border-radius: 24px;
     width: 100%;
     height: auto;
+    border: solid 1px #E6EAF2;
   }
 
   
@@ -193,6 +194,7 @@
     width: 100%;
     height: auto;
     border-radius: 24px;
+    border: solid 1px #E6EAF2;
   }
   
   .projectContent {
@@ -325,6 +327,7 @@
     margin-bottom: 0rem;
     margin-top: 0rem;
     color: #201E1E;
+    text-align: center;
   }
   
   .endingSection {

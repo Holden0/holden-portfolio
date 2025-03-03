@@ -14,7 +14,7 @@ const Footer = () => {
           </TransitionLink>
         </div>
         <nav className={styles.navLinks}>
-          <Link href="/about" className={styles.link}>ABOUT</Link>
+          <TransitionLink href="/about" className={styles.link}>ABOUT</TransitionLink>
           <Link href="mailto:holdenmmbudiman@gmail.com" className={styles.link}>CONTACT ME </Link>
           <a href="/Holden_Budiman_Resume.pdf" download className={styles.link}>RESUME</a>
         </nav>

@@ -1201,10 +1201,11 @@ export default function Fairshare() {
           </TransitionLink>
         </div>
         <div className={styles.project}>
+          <TransitionLink href="/projects/canmock">
           <ProjectCard
-            title="In Development"
-            date="XXXX/XXXX"
-            info="xxxxx xxxxxx"
+            title="Can Mockup"
+            date="2024"
+            info="Product Design / Graphic Design"
             imageSrc="/naughty-dog-mockup01.webp"
             backgroundColor="#45516C"
             // backgroundColor="#FAFAFA"
@@ -1212,6 +1213,7 @@ export default function Fairshare() {
             dateColor="#DDDDE1"
             infoColor="#DDDDE1"
           />
+          </TransitionLink>
         </div>
       </div>
       <Footer />

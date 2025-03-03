@@ -420,7 +420,8 @@
 .endingSection {
   display: flex;
   justify-content: center;
-  margin: 10rem 0 0;
+  text-align: center;
+  margin: 4rem 0 0;
 }
 
 .endingSection p {
@@ -625,9 +626,6 @@
 }
 
 @media (max-width: 767px) {
-  .connectSection {
-    display: none;
-  }
 }
 
 

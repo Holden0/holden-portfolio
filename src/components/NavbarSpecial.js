@@ -25,7 +25,7 @@ export default function NavbarSpecial() {
         </button>
         
         <div className={`${styles.navLinks} ${isMenuOpen ? styles.active : ''}`}>
-          <Link href="/about">ABOUT</Link>
+          <TransitionLink href="/about">ABOUT</TransitionLink>
           <a href="mailto:holdenmmbudiman@gmail.com">CONTACT ME</a> 
           <a href="/Holden_Budiman_Resume.pdf" download>RESUME</a> 
         </div>

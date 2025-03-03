@@ -120,6 +120,12 @@
   background-color: #EDAF53;
 }
 
+/* Class to disable default button animation */
+.noAnimation::before,
+.noAnimation::after {
+  display: none !important;
+}
+
 /* Tablet breakpoint */
 @media (min-width: 768px) {
   .content {

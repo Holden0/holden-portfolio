@@ -729,7 +729,11 @@ export default function Onward() {
         </div>
         <div className={styles.connectSection}>
           <ConnectSection
-            iconBackgroundColor="#E2E2E200"
+            iconBackgroundColor="#E5E5E5"
+            textColor="#8D8D93"
+            buttonBackgroundColor="#EDAF53"
+            buttonTextColor="#201E1E"
+            customText="Connect with me!"
             // textColor="#8D8D93"
           />
         </div>

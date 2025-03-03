@@ -4,9 +4,11 @@
 import Image from "next/image";
 import styles from "./canmock.module.css";
 import NavbarSpecialBlue from "../../../components/NavbarSpecialBlue";
-import FooterSpecial from "../../../components/FooterSpecial";
+import FooterSpecialBlue from "../../../components/FooterSpecialBlue";
 import ConnectSection from "../../../components/ConnectSection.js";
 import ProjectCard from "../../../components/ProjectCard";
+import CanMockSkillCard from "../../../components/CanMockSkillCard"; // Import the new component
+import { TransitionLink } from "../../../components/utils/TransitionLink";
 
 export default function CanMock() {
   return (
@@ -31,9 +33,9 @@ export default function CanMock() {
           </div>
           <div className={styles.paragraphColumn}>
             <p className={styles.sectionText}>
-              Project Role: Designer <br/>
-              Date: November 2024  <br/>
-              Deliverables: Print Files / Product Mockups  <br/>
+              Project Role: Designer <br />
+              Date: November 2024 <br />
+              Deliverables: Print Files / Product Mockups <br />
             </p>
           </div>
         </div>
@@ -46,7 +48,7 @@ export default function CanMock() {
               alt="NAUGHTY DOG"
               width={1200}
               height={300}
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px" // Add responsive sizing
+              sizes="100vw" // Simpler responsive sizing
               className={styles.textImage}
               priority
             />
@@ -58,16 +60,152 @@ export default function CanMock() {
               alt="CanMock Product"
               width={1350} // Match the max-width in CSS
               height={1350} // Maintain aspect ratio
-              sizes="(max-width: 480px) 80vw, (max-width: 768px) 85vw, (max-width: 992px) 90vw, (max-width: 1200px) 95vw, 1350px" // Add responsive sizing
+              sizes="90vw" // Simpler responsive sizing
               className={styles.canImage}
               priority
             />
           </div>
         </div>
+
+        {/* New text section below the can mockup */}
+        <div className={styles.infoSectionContainer}>
+          <div className={styles.infoSection}>
+            <h2 className={styles.infoHeading}>
+              Craft Beer Branding & Can Mockups
+            </h2>
+            <p className={styles.infoText}>
+              As the project lead, I managed the app's design process from
+              concept to execution, prioritizing the creation of a seamless and
+              user centered experience. I conducted in-depth research to
+              understand user needs and pain points, which informed the design
+              direction.
+              <br />
+              <br />
+              Using this foundation, I developed wireframes that progressed from
+              low to high fidelity, refining each iteration to ensure clarity,
+              usability, and alignment with project goals. Iterative testing and
+              feedback played a key role in optimizing the design to meet both
+              user expectations and functional requirements.
+            </p>
+
+            {/* Project info lines with aligned label-value pairs */}
+            <div className={styles.projectDetailsContainer}>
+              <div className={styles.detailLine}>
+                <span className={styles.detailLabel}>Project Role:</span>
+                <span className={styles.detailValue}>Designer</span>
+              </div>
+              <div className={styles.detailLine}>
+                <span className={styles.detailLabel}>Date:</span>
+                <span className={styles.detailValue}>November 2024</span>
+              </div>
+              <div className={styles.detailLine}>
+                <span className={styles.detailLabel}>Deliverables:</span>
+                <span className={styles.detailValue}>
+                  Print Files / Product Mockups
+                </span>
+              </div>
+            </div>
+
+            {/* Skills showcase section using the SkillCard component */}
+            <h3 className={styles.skillsHeading}>Tools Used</h3>
+            <div className={styles.skillCardsContainer}>
+              <div className={styles.skillCards}>
+                <div className={styles.card}>
+                  <CanMockSkillCard
+                    logoSrc="/psIcon.png"
+                    title="Adobe Photoshop"
+                  />
+                </div>
+                <div className={styles.card}>
+                  <CanMockSkillCard
+                    logoSrc="/aiIcon.png"
+                    title="Adobe Illustrator"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Full-width image below skill cards using Next.js Image component */}
+            <div className={styles.fullWidthImageContainer}>
+              <Image
+                src="/dog-mockup01.webp"
+                alt="Dog Mockup"
+                width={1500}
+                height={1500} // Assuming a 16:9 aspect ratio, adjust as needed
+                sizes="100vw"
+                className={styles.fullWidthImage}
+              />
+            </div>
+
+            {/* Content section beneath the mockup image */}
+            <div className={styles.mockupContentSection}>
+              <h2 className={styles.mockupHeading}>Brand Development</h2>
+              <h3 className={styles.mockupSubheading}>
+                Playful yet Serious Design
+              </h3>
+              <p className={styles.mockupText}>
+                Naughty Dog combines a playful spirit with a clean, modern
+                design to attract beer drinkers who appreciate both fun and
+                quality. The branding features bold yet minimalistic visuals,
+                ensuring strong shelf appeal while maintaining a refined
+                aesthetic. With simple typography and engaging imagery, Naughty
+                Dog creates a memorable identity that stands out in the
+                competitive beer market.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Move the all-can-design image outside the infoSection for full-width styling */}
+        <div className={styles.fullWidthImageContainer}>
+          <Image
+            src="/all-can-design.webp"
+            alt="All Can Design"
+            width={3000}
+            height={1200}
+            sizes="100vw"
+            className={styles.fullWidthImage}
+          />
+        </div>
+
+        {/* Keep the can falling mockup inside infoSection with reduced top spacing */}
+        <div
+          className={styles.infoSectionContainer}
+          style={{ marginTop: "4rem" }}
+        >
+          <div className={styles.infoSection}>
+            <div className={styles.fullWidthImageContainer}>
+              <Image
+                src="/can-falling-mockup.webp"
+                alt="Can Falling Mockup"
+                width={2732}
+                height={2972}
+                sizes="100vw"
+                className={styles.fullWidthImage}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Add an ending section similar to Onward */}
+      <div className={styles.endingSection}>
+        <p>Enjoy? Check out my other projects</p>
       </div>
 
       <div className={styles.connectSection}>
-        <ConnectSection iconBackgroundColor="#E2E2E200" textColor="#8D8D93" />
+        {/* <ConnectSection iconBackgroundColor="#535F7C" textColor="#8D8D93" /> */}
+        <ConnectSection
+          iconBackgroundColor="#535F7C"
+          textColor="#ffffff"
+          buttonBackgroundColor="#ffffff"
+          buttonTextColor="#535F7C"
+          customText="Connect with me!"
+          containerStyle={{
+            marginTop: "4rem",
+            marginBottom: "2rem",
+          }}
+        />
       </div>
 
       <div className={styles.projectContainer}>
@@ -86,22 +224,22 @@ export default function CanMock() {
           </a>
         </div>
         <div className={styles.project}>
-          <a href="/projects/drawings">
+          <TransitionLink href="/projects/onward">
             <ProjectCard
-              title="Artwork Collection"
-              date="2020-2023"
-              info="Digital Art"
-              imageSrc="/anatomy-face.webp"
-              backgroundColor="#252323"
-              titleColor="#FFFFFF"
+              title="Mock Interview App"
+              date="2024/2025"
+              info="Web"
+              imageSrc="/onward-mockup.webp"
+              backgroundColor="#FAFAFA"
+              titleColor="#000000"
               dateColor="#8D8D93"
               infoColor="#8D8D93"
             />
-          </a>
+          </TransitionLink>
         </div>
       </div>
 
-      <FooterSpecial />
+      <FooterSpecialBlue />
     </div>
   );
 }

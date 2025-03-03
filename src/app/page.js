@@ -53,20 +53,6 @@ export default function HomePage() {
       </div>
       <div className={styles.projectSection}>
         <div className={styles.project}>
-          <TransitionLink href="/projects/fairshare">
-            <ProjectCard
-              title="Bill Splitting App"
-              date="2024/2025"
-              info="Mobile/Tablet"
-              imageSrc="/fairshare-mockup02.webp"
-              backgroundColor="#252323"
-              titleColor="#FFFFFF"
-              dateColor="#8D8D93"
-              infoColor="#8D8D93"
-            />
-          </TransitionLink>
-        </div>
-        <div className={styles.project}>
           <TransitionLink href="/projects/onward">
             <ProjectCard
               title="Mock Interview App"
@@ -75,6 +61,20 @@ export default function HomePage() {
               imageSrc="/onward-mockup.webp"
               backgroundColor="#FAFAFA"
               titleColor="#000000"
+              dateColor="#8D8D93"
+              infoColor="#8D8D93"
+            />
+          </TransitionLink>
+        </div>
+        <div className={styles.project}>
+          <TransitionLink href="/projects/fairshare">
+            <ProjectCard
+              title="Bill Splitting App"
+              date="2024/2025"
+              info="Mobile/Tablet"
+              imageSrc="/fairshare-mockup02.webp"
+              backgroundColor="#252323"
+              titleColor="#FFFFFF"
               dateColor="#8D8D93"
               infoColor="#8D8D93"
             />
@@ -93,21 +93,21 @@ export default function HomePage() {
           />
         </div>
         <div className={styles.project}>
-          <TransitionLink href="/projects/drawings">
-          <ProjectCard
-            title="Other Work"
-            date="2024/2025"
-            info="Graphic Design"
-            imageSrc="/otherWork.webp"
-            backgroundColor="#FFFFFF"
-            // backgroundColor="#FAFAFA"
-            titleColor="#000000"
-            dateColor="#8D8D93"
-            infoColor="#8D8D93"
-          />
+          <TransitionLink href="/projects/canmock">
+            <ProjectCard
+              title="Can Mockup"
+              date="2024"
+              info="Product Design / Graphic Design"
+              imageSrc="/naughty-dog-mockup01.webp"
+              backgroundColor="#45516C"
+              // backgroundColor="#FAFAFA"
+              titleColor="#F9F9F9"
+              dateColor="#DDDDE1"
+              infoColor="#DDDDE1"
+            />
           </TransitionLink>
         </div>
-        
+
         {/* <div className={styles.project}>
           <ProjectCard
             title="Naughty Dog Brewing"
@@ -122,19 +122,21 @@ export default function HomePage() {
           />
         </div> */}
         <div className={styles.project}>
-          <ProjectCard
-            title="In Development"
-            date="XXXX/XXXX"
-            info="XXXXXX XXXXXX"
-            imageSrc="/naughty-dog-mockup01.webp"
-            backgroundColor="#45516C"
-            // backgroundColor="#FAFAFA"
-            titleColor="#F9F9F9"
-            dateColor="#DDDDE1"
-            infoColor="#DDDDE1"
-          />
+          <TransitionLink href="/projects/drawings">
+            <ProjectCard
+              title="Other Work"
+              date="2024/2025"
+              info="Graphic Design"
+              imageSrc="/otherWork.webp"
+              backgroundColor="#FFFFFF"
+              // backgroundColor="#FAFAFA"
+              titleColor="#000000"
+              dateColor="#8D8D93"
+              infoColor="#8D8D93"
+            />
+          </TransitionLink>
         </div>
-                {/* <div className={styles.project}>
+        {/* <div className={styles.project}>
           <ProjectCard
             title="Other Work"
             date="2024/2025"
