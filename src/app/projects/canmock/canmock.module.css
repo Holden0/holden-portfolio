@@ -58,6 +58,24 @@
   font-family: var(--font-neue), 'Inter', sans-serif;
 }
 
+/* Specific styles for each paragraph */
+.objectiveText {
+  border-left: 1px solid #5d6b8e;
+  padding-left: 1rem;
+  font-style: italic;
+}
+
+.inspirationText {
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.detailsText {
+  font-size: 1rem;
+  line-height: 1.8;
+  font-style: italic;
+}
+
 /* Main visual section with the text image and can */
 .mainVisualSection {
   position: relative;
@@ -321,6 +339,19 @@
   .mockupSubheading {
     font-size: 1.25rem;
     margin-bottom: 1.25rem;
+  }
+
+  .objectiveText, .inspirationText, .detailsText {
+    margin-bottom: 1rem;
+  }
+  
+  .objectiveText {
+    border-left: 1px solid #e2e0dd;
+    padding-left: 0.8rem;
+  }
+  
+  .detailsText {
+    /* padding: 1rem; */
   }
 }
 

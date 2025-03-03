@@ -19,20 +19,20 @@ export default function CanMock() {
         {/* Introduction paragraphs */}
         <div className={styles.paragraphRow}>
           <div className={styles.paragraphColumn}>
-            <p className={styles.sectionText}>
+            <p className={`${styles.sectionText} ${styles.objectiveText}`}>
               The project objective was to create business ready mockups
               followed by packaged designs and consistent branding.
             </p>
           </div>
           <div className={styles.paragraphColumn}>
-            <p className={styles.sectionText}>
+            <p className={`${styles.sectionText} ${styles.inspirationText}`}>
               Project drew inspiration from my dog Scoot, a naughty boy that
               always keeps me entertained with his behaviour. Mixing this with
               my love for craft beer Naughty Dog brewing was born
             </p>
           </div>
           <div className={styles.paragraphColumn}>
-            <p className={styles.sectionText}>
+            <p className={`${styles.sectionText} ${styles.detailsText}`}>
               Project Role: Designer <br />
               Date: November 2024 <br />
               Deliverables: Print Files / Product Mockups <br />
