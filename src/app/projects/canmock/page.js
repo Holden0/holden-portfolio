@@ -74,18 +74,18 @@ export default function CanMock() {
               Craft Beer Branding & Can Mockups
             </h2>
             <p className={styles.infoText}>
-              As the project lead, I managed the app's design process from
-              concept to execution, prioritizing the creation of a seamless and
-              user centered experience. I conducted in-depth research to
-              understand user needs and pain points, which informed the design
-              direction.
+              This product design project focused on creating a client-ready
+              beverage can mockup, balancing aesthetics, functionality, and
+              regulatory compliance. The objective was to design a visually
+              appealing and market-ready can while adhering to Canadian beverage
+              mandates. Key considerations included label requirements, printing measurements and
+              bilingual packaging.
               <br />
               <br />
-              Using this foundation, I developed wireframes that progressed from
-              low to high fidelity, refining each iteration to ensure clarity,
-              usability, and alignment with project goals. Iterative testing and
-              feedback played a key role in optimizing the design to meet both
-              user expectations and functional requirements.
+              The final design
+              optimized branding, usability, and manufacturability, ensuring the
+              can met both consumer appeal and industry standards for successful
+              market placement.
             </p>
 
             {/* Project info lines with aligned label-value pairs */}
