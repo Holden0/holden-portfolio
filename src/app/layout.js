@@ -26,6 +26,28 @@ export const metadata = {
       { url: '/apple-touch-icon.png' },
     ],
   },
+  openGraph: {
+    title: 'Holden Budiman | UX Designer',
+    description: 'UX designer specializing in creating seamless user experience for modern web and mobile applications',
+    url: 'https://www.holdenbudiman.com/', // Replace with your actual domain
+    siteName: 'Holden Budiman Portfolio',
+    images: [
+      {
+        url: '/og-image.jpg', // Replace with your actual image path
+        width: 1200,
+        height: 630,
+        alt: 'Holden Budiman Portfolio',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Holden Budiman | UX Designer',
+    description: 'UX designer specializing in creating seamless user experience for modern web and mobile applications',
+    images: ['/og-image.jpg'], // Replace with your actual image path
+  },
 };
 
 export default function RootLayout({ children }) {
