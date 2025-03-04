@@ -886,11 +886,11 @@ export default function Fairshare() {
                   user-friendly, flexible solution.
                 </p>
               </div>
-              <div className={styles.styleGuideLink}>
+              {/* <div className={styles.styleGuideLink}>
                 <Link href="/projects/fairshare/styleguide">
                   View Competitor Analysis
                 </Link>
-              </div>
+              </div> */}
               <div className={styles.body_inter_20_semibold}>
                 <p>User Personas</p>
               </div>
@@ -1008,11 +1008,11 @@ export default function Fairshare() {
             width={1395}
             height={908}
           />
-          <div className={styles.styleGuideLink}>
+          {/* <div className={styles.styleGuideLink}>
             <Link href="/projects/fairshare/styleguide">
               View Full Style Guide
             </Link>
-          </div>
+          </div> */}
         </div>
         
         {/* Site map section */}
