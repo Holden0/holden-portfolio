@@ -61,10 +61,11 @@ export default function About() {
                 <div className={styles.skillCardsContainers}>
                     <p>Design Tech</p>
                     <div className={styles.skillCards}>
-                        <div className={styles.card}><SkillCard logoSrc="/figmaIcon.svg" title="Figma" /></div>
                         <div className={styles.card}><SkillCard logoSrc="/psIcon.png" title="Adobe Photoshop" /></div>
                         <div className={styles.card}><SkillCard logoSrc="/aiIcon.png" title="Adobe Illustrator" /></div>
                         <div className={styles.card}><SkillCard logoSrc="/idIcon.png" title="Adobe Indesign" /></div>
+                        <div className={styles.card}><SkillCard logoSrc="/aeIcon.svg" title="Adobe After Effects" /></div>
+                        <div className={styles.card}><SkillCard logoSrc="/figmaIcon.svg" title="Figma" /></div>
                     </div>
                     <p>Development Tech</p>
                     <div className={styles.skillCards}>
@@ -72,6 +73,8 @@ export default function About() {
                         <div className={styles.card}><SkillCard logoSrc="/cssIcon.png" title="CSS" /></div>
                         <div className={styles.card}><SkillCard logoSrc="/htmlIcon.png" title="HTML" /></div>
                         <div className={styles.card}><SkillCard logoSrc="/ghIcon.png" title="GitHub" /></div>
+                        <div className={styles.card}><SkillCard logoSrc="/nextjsIcon.svg" title="Next.js" /></div>
+                        <div className={styles.card}><SkillCard logoSrc="/rjsIcon.svg" title="React js" /></div>
                     </div>
                 </div>
             </div>
