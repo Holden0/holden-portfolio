@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./about.module.css";
 import Navbar from "../../components/Navbar";
-import SocialConnect from "../../components/ConnectSection";
+import ConnectSection from "../../components/ConnectSection";
 import ProjectCard from "../../components/ProjectCard";
 import Footer from "../../components/Footer";
 import SkillCard from "../../components/SkillCard";
@@ -81,7 +81,7 @@ export default function About() {
             <div className={styles.hobbiesContainer}>
             <HobbiesCard />
             </div>
-        <SocialConnect />
+        <ConnectSection />
       </div>
       <Footer />
     </div>

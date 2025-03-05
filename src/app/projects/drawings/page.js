@@ -84,9 +84,13 @@ export default function Drawings() {
           <p>Enjoy? Check out my other projects</p>
         </div>
         <div className={styles.connectSection}>
-          <ConnectSection
-            iconBackgroundColor="#E2E2E200"
+        <ConnectSection
+            iconBackgroundColor="#E5E5E5"
             textColor="#8D8D93"
+            buttonBackgroundColor="#EDAF53"
+            buttonTextColor="#201E1E"
+            customText="Connect with me!"
+            // textColor="#8D8D93"
           />
         </div>
       </div>
