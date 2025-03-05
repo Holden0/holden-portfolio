@@ -50,6 +50,29 @@
   display: flex;
   align-items: center;
   white-space: nowrap;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Add hover effect with underline */
+.navLinks a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--highlight-yellow);
+  transition: width 0.3s ease;
+}
+
+.navLinks a:hover::after {
+  width: 100%;
+}
+
+/* Alternative or additional hover effect with text color */
+.navLinks a:hover {
+  color: var(--highlight-yellow, #F7D046);
 }
 
 /* Hamburger menu button */
