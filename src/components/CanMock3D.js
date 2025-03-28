@@ -1,40 +1,91 @@
 "use client";
 
-import React, { useRef, Suspense } from 'react';
+import React, { useRef, Suspense, useState, useEffect } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { OrbitControls, useGLTF, Environment, Stage } from '@react-three/drei';
+import { OrbitControls, useGLTF, Environment, Center } from '@react-three/drei';
+import { MathUtils, Vector3 } from 'three';
 
 function Can(props) {
-  const { scene } = useGLTF('/base-can-mockup1.glb');
+  const { scene } = useGLTF('/base-can-mockup03.glb');
   const ref = useRef();
+  const groupRef = useRef();
+  const [isDragging, setIsDragging] = useState(false);
+  
+  useEffect(() => {
+    if (ref.current) {
+      const centerPoint = new Vector3();
+      
+      if (scene.boundingBox) {
+        scene.boundingBox.getCenter(centerPoint);
+      }
+      ref.current.rotation.z = MathUtils.degToRad(-10);
+    }
+  }, []);
   
   useFrame((state) => {
-    if (ref.current) {
-      ref.current.rotation.y += 0.005;
+    if (groupRef.current) {
+      groupRef.current.rotation.y += isDragging ? 0.02 : 0.005;
     }
   });
 
-  return <primitive ref={ref} object={scene} {...props} />;
+  return (
+    <group 
+      ref={groupRef} 
+      position={[0, 0, 0]}
+      onPointerDown={() => setIsDragging(true)}
+      onPointerUp={() => setIsDragging(false)}
+      onPointerLeave={() => setIsDragging(false)}
+    >
+      <Center>
+        <primitive 
+          ref={ref} 
+          object={scene} 
+          {...props} 
+        />
+      </Center>
+    </group>
+  );
 }
-
 
 export default function CanMock3D({ containerClassName }) {
   return (
-    <div className={containerClassName || ''} style={{ width: '100%', height: '100%', minHeight: '500px' }}>
-      <Canvas camera={{ position: [0, 0, 4], fov: 50 }}>
+    <div className={containerClassName || ''} style={{ 
+      width: '100%', 
+      height: '100%', 
+      minHeight: '500px',
+      position: 'relative',
+      overflow: 'visible',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center'
+    }}>
+      <Canvas 
+        camera={{ position: [0, 0, 8], fov: 25 }}
+        style={{ 
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%'
+        }}
+        shadows={false}
+      >
         <Suspense fallback={null}>
-          <Stage environment="studio" intensity={0.5} contactShadow={false}>
-            <Can scale={1} position={[0, 0, 0]} />
-          </Stage>
-          <Environment preset="studio" />
+          <ambientLight intensity={0.5} />
+          <directionalLight position={[10, 10, 5]} intensity={0.2} />
+          <directionalLight position={[-10, -5, -5]} intensity={0.2} color="#5c7db5" />
           <OrbitControls 
-            enableZoom={true}
+            enableZoom={false}
             enablePan={false}
-            autoRotate={false}
-            autoRotateSpeed={1}
-            minDistance={2}
-            maxDistance={8}
+            enableRotate={true}
+            rotateSpeed={0.5}
+            target={[0, 0, 0]}
           />
+          <Can 
+            scale={1.1} 
+            position={[0, 0, 0]} 
+          />
+          <Environment preset="warehouse" intensity={0.5} />
         </Suspense>
       </Canvas>
       
@@ -50,11 +101,10 @@ export default function CanMock3D({ containerClassName }) {
         fontSize: '0.8rem',
         display: 'flex',
         gap: '10px',
-        opacity: '0.8'
+        opacity: '0.8',
+        zIndex: 10
       }}>
         <span>Click and drag to rotate</span>
-        <span>•</span>
-        <span>Scroll to zoom</span>
       </div>
     </div>
   );
