@@ -7,8 +7,11 @@ import NavbarSpecialBlue from "../../../components/NavbarSpecialBlue";
 import FooterSpecialBlue from "../../../components/FooterSpecialBlue";
 import ConnectSection from "../../../components/ConnectSection.js";
 import ProjectCard from "../../../components/ProjectCard";
-import CanMockSkillCard from "../../../components/CanMockSkillCard"; // Import the new component
+import CanMockSkillCard from "../../../components/CanMockSkillCard"; 
 import { TransitionLink } from "../../../components/utils/TransitionLink";
+import dynamic from 'next/dynamic';
+
+const CanMock3D = dynamic(() => import('../../../components/CanMock3D'), { ssr: false });
 
 export default function CanMock() {
   return (
@@ -40,7 +43,6 @@ export default function CanMock() {
           </div>
         </div>
 
-        {/* Main visual section - optimized image sizes */}
         <div className={styles.mainVisualSection}>
           <div className={styles.textImageContainer}>
             <Image
@@ -48,22 +50,14 @@ export default function CanMock() {
               alt="NAUGHTY DOG"
               width={1200}
               height={300}
-              sizes="100vw" // Simpler responsive sizing
+              sizes="100vw" 
               className={styles.textImage}
               priority
             />
           </div>
 
           <div className={styles.canImageContainer}>
-            <Image
-              src="/can_mock.png"
-              alt="CanMock Product"
-              width={1350} // Match the max-width in CSS
-              height={1350} // Maintain aspect ratio
-              sizes="90vw" // Simpler responsive sizing
-              className={styles.canImage}
-              priority
-            />
+            <CanMock3D />
           </div>
         </div>
 

@@ -110,23 +110,23 @@
   position: absolute;
   top: 50%; 
   left: 50%;
-  transform: translate(-50%, -30%); /* Center horizontally, adjust vertical position */
+  transform: translate(-50%, -30%);
   z-index: 10;
   overflow: visible;
-  width: auto; /* Let the image determine the width */
+  width: 50%;
+  height: 650px;
   display: flex;
-  justify-content: center; /* Ensure inner content is centered */
-  align-items: center; /* Ensure inner content is centered vertically */
-  padding-bottom: 2rem; /* Add padding at the bottom of the container */
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
 }
 
-/* Style for the can image - 50% LARGER */
+/* Style for the can image */
 .canImage {
-  max-width: min(1350px, 90vw); /* Fluid sizing with upper limit */
-  width: 100%; /* Full width within its container */
-  height: auto;
-  display: block;
-  margin: 0 auto; /* Center the image */
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: visible;
 }
 
 /* New section for the information text below can mockup - increased bottom spacing */
@@ -209,8 +209,9 @@
 
 /* Base styles with a more fluid approach */
 @media (max-width: 1200px) {
-  .canImage {
-    max-width: min(1125px, 90vw);
+  .canImageContainer {
+    width: 60%;
+    height: 600px;
   }
   
   .infoSectionContainer {
@@ -219,8 +220,9 @@
 }
 
 @media (max-width: 992px) {
-  .canImage {
-    max-width: min(975px, 90vw);
+  .canImageContainer {
+    width: 70%;
+    height: 550px;
   }
   
   .infoSectionContainer {
@@ -274,8 +276,9 @@
   }
   
   .canImageContainer {
-    width: 100%; /* Full width container on mobile */
-    transform: translate(-50%, -25%); /* Adjust vertical position on mobile */
+    width: 85%;
+    height: 500px;
+    transform: translate(-50%, -25%);
   }
   
   .canImage {
@@ -357,7 +360,9 @@
 
 @media (max-width: 480px) {
   .canImageContainer {
-    transform: translate(-50%, -20%); /* Further adjust vertical position on smaller screens */
+    width: 95%;
+    height: 450px;
+    transform: translate(-50%, -20%);
   }
   
   .canImage {
