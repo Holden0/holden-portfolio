@@ -20,8 +20,8 @@ function Can(props) {
   }, []);
   
   useFrame((state) => {
-    if (groupRef.current) {
-      groupRef.current.rotation.y += 0.01;
+    if (groupRef.current && !isDragging) {
+      groupRef.current.rotation.y += 0.006;
     }
   });
 
