@@ -5,6 +5,8 @@ import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls, useGLTF, Environment, Center } from '@react-three/drei';
 import { MathUtils, Vector3 } from 'three';
 
+useGLTF.preload('/base-can-mockup03.glb');
+
 function Can(props) {
   const { scene } = useGLTF('/base-can-mockup03.glb');
   const ref = useRef();
@@ -13,18 +15,13 @@ function Can(props) {
   
   useEffect(() => {
     if (ref.current) {
-      const centerPoint = new Vector3();
-      
-      if (scene.boundingBox) {
-        scene.boundingBox.getCenter(centerPoint);
-      }
       ref.current.rotation.z = MathUtils.degToRad(-10);
     }
   }, []);
   
   useFrame((state) => {
     if (groupRef.current) {
-      groupRef.current.rotation.y += isDragging ? 0.02 : 0.005;
+      groupRef.current.rotation.y += 0.01;
     }
   });
 
@@ -32,7 +29,10 @@ function Can(props) {
     <group 
       ref={groupRef} 
       position={[0, 0, 0]}
-      onPointerDown={() => setIsDragging(true)}
+      onPointerDown={(e) => {
+        e.stopPropagation();
+        setIsDragging(true);
+      }}
       onPointerUp={() => setIsDragging(false)}
       onPointerLeave={() => setIsDragging(false)}
     >
@@ -48,6 +48,24 @@ function Can(props) {
 }
 
 export default function CanMock3D({ containerClassName }) {
+  const [isMounted, setIsMounted] = useState(false);
+  
+  useEffect(() => {
+    setIsMounted(true);
+    return () => setIsMounted(false);
+  }, []);
+  
+  if (!isMounted) {
+    return (
+      <div className={containerClassName || ''} style={{ 
+        width: '100%', 
+        height: '100%', 
+        minHeight: '500px',
+        position: 'relative'
+      }}></div>
+    );
+  }
+
   return (
     <div className={containerClassName || ''} style={{ 
       width: '100%', 
@@ -69,6 +87,8 @@ export default function CanMock3D({ containerClassName }) {
           height: '100%'
         }}
         shadows={false}
+        dpr={[1, 2]}
+        gl={{ antialias: true, alpha: true }}
       >
         <Suspense fallback={null}>
           <ambientLight intensity={0.5} />
@@ -80,6 +100,7 @@ export default function CanMock3D({ containerClassName }) {
             enableRotate={true}
             rotateSpeed={0.5}
             target={[0, 0, 0]}
+            makeDefault
           />
           <Can 
             scale={1.1} 
