@@ -11,7 +11,7 @@
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1rem 0;
+  padding: 1rem;
 }
 
 .containerLeft,
@@ -170,5 +170,56 @@
 
   .iconWrapper {
     gap: 2.4rem;
+  }
+}
+
+/* Add these mobile-specific styles */
+
+@media (max-width: 480px) {
+  .container {
+    padding: 1rem 0;
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .content {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .iconWrapper {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+  }
+
+  .containerLeft,
+  .containerRight {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .socialLinks {
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .contactButton {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+
+  .text {
+    width: 100%;
+    padding: 0 1rem;
+    text-align: center;
   }
 }

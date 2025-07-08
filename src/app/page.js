@@ -97,7 +97,7 @@ export default function HomePage() {
             />
           </TransitionLink>
         </div>
-        <div className={styles.project}>
+        {/* <div className={styles.project}>
           <TransitionLink href="/projects/drawings">
             <ProjectCard
               title="Other Work"
@@ -110,7 +110,7 @@ export default function HomePage() {
               infoColor="#8D8D93"
             />
           </TransitionLink>
-        </div>
+        </div> */}
       </div>
       <Footer />
     </div>
