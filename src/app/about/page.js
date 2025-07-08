@@ -35,10 +35,13 @@ export default function About() {
             </div>
             <div className={styles.bio}>
                 <p>
-                    Hi, I’m Holden Budiman! I’m a UX designer from Vancouver, Canada, with a passion for creating meaningful digital experiences. My design journey began with fashion and painting, where I developed a strong creative foundation and an eye for aesthetics.
+                    Hi, I’m Holden Budiman, a product and UX designer based in Vancouver, Canada. I come from a background in fashion and painting, which shaped my eye for aesthetics and sparked my interest in human-centered design.
                 </p>
                 <p>
-                    When I entered college, I discovered UX design and found my calling in crafting apps and interfaces that make life easier for others. I have strong leadership skills and thrive in collaborative team environments. From brainstorming ideas to designing, coding, and managing timelines, I’ve gained hands-on experience bringing projects to life from scratch.
+                    I focus on creating digital experiences that are intuitive, purposeful, and visually thoughtful. I enjoy working across the full design process, from early research and concept development to UI design and implementation.
+                </p>
+                <p>
+                    What drives me most is the challenge of turning complex problems into clear, engaging solutions that improve everyday interactions.
                 </p>
             </div>
             <div className={styles.educationSection}>
