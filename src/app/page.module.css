@@ -1,5 +1,6 @@
 .pageWrapper {
   width: 100%;
+  overflow-x: hidden;
 }
 
 .content {
@@ -52,18 +53,14 @@
 }
 
 .headingBody h5 {
-  /* margin: 1.5rem 0rem; */
   margin: 1.5rem 0rem 0rem 0rem;
   line-height: 2.1rem;
   font-size: 2rem;
-  /* font-family: 'NeueMontreal', sans-serif;
-  font-weight: 300;  */
   font-family: var(--font-neue);
   font-weight: 400;
 }
 
 .projectSection {
-  width: 100%;
   max-width: 65rem;
   margin-left: auto;
   margin-right: auto;
@@ -75,12 +72,6 @@
   margin-bottom: 8em;
   width: calc(100% - 4rem);
 }
-
-/* .project {
-  flex: 1 1 calc(50% - 1rem);
-  display: flex;
-  justify-content: center;
-} */
 
 .project {
   flex: 0 0 calc(50% - 1rem);
@@ -98,11 +89,55 @@
 }
 
 @media (max-width: 768px) {
-  /* .project {
-    flex: 1 1 100%;
-  } */
   .project {
     flex: 1 1 100%;
     max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    padding: 0.4rem 1rem;
+    overflow-x: hidden;
+  }
+
+  .heading01 {
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+    width: 100%;
+  }
+
+  .imageContainer {
+    order: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .heroImage {
+    width: 120px !important;
+    height: 120px !important;
+  }
+
+  .text {
+    order: 2;
+    width: 100%;
+    text-align: center;
+  }
+
+  .text h1 {
+    font-size: 2.5rem;
+  }
+
+  .headingBody h5 {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    text-align: center;
+  }
+
+  .projectSection {
+    width: calc(100% - 2rem);
+    padding: 0 1rem;
   }
 }
