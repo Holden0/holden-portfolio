@@ -39,6 +39,8 @@
 
 .heroImage {
   border-radius: 0.75rem;
+  width: 64px;
+  height: 64px;
 }
 
 .yellowText {

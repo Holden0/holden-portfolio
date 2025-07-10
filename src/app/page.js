@@ -20,8 +20,8 @@ export default function HomePage() {
               <Image
                 src="/face-shot.png"
                 alt="Headshot"
-                width={64}
-                height={64}
+                width={120}
+                height={120}
                 className={styles.heroImage}
               />
             </div>
