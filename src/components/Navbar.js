@@ -32,7 +32,7 @@ export default function Navbar() {
         >
           <TransitionLink href="/about">ABOUT</TransitionLink>
           <a href="mailto:holdenmmbudiman@gmail.com">CONTACT ME</a>
-          <a href="/Holden_Budiman_Resume.pdf" download>
+          <a href="/HoldenBudiman_Resume.pdf" download>
             RESUME
           </a>
         </div>
