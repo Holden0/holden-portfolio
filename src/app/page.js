@@ -73,9 +73,9 @@ export default function HomePage() {
         </div>
         <div className={styles.project}>
           <ProjectCard
-            title="In Development"
+            title="Neighbourly App"
             date="XXXX"
-            info="XXXX, XXXXX"
+            info="In Development"
             imageSrc="/neighbourly-mockup.webp"
             backgroundColor="#252323"
             titleColor="#FFFFFF"
@@ -83,7 +83,7 @@ export default function HomePage() {
             infoColor="#8D8D93"
           />
         </div>
-        <div className={styles.project}>
+                <div className={styles.project}>
           <TransitionLink href="/projects/canmock">
             <ProjectCard
               title="Can Mockup"
@@ -96,6 +96,18 @@ export default function HomePage() {
               infoColor="#DDDDE1"
             />
           </TransitionLink>
+        </div>
+        <div className={styles.project}>
+          <ProjectCard
+            title="Fraser Health Redesign"
+            date="XXXX"
+            info="Case Study Coming Soon"
+            imageSrc="/fh-mockup.webp"
+            backgroundColor="#FAFAFA"
+            titleColor="#000000"
+            dateColor="#8D8D93"
+            infoColor="#8D8D93"
+          />
         </div>
         {/* <div className={styles.project}>
           <TransitionLink href="/projects/drawings">
